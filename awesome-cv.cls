@@ -429,7 +429,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{http://\@homepage}{\faHome\ \@homepage}
+          \href{https://\@homepage}{\faHome\ https://\@homepage}
         }
       \ifthenelse{\isundefined{\@github}}
         {}
@@ -439,7 +439,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{https://github.com/\@github}{\faGithubSquare\ \@github}
+          \href{https://github.com/\@github}{\faGithubSquare\ https://github.com/\@github}
         }
       \ifthenelse{\isundefined{\@stackoverflowid}}
         {}
