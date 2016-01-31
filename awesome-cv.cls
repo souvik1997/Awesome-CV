@@ -10,7 +10,7 @@
 %
 % Notes:
 % 1) This class file defines the structure and layout of the template file (cv.tex, resume.tex).
-% 2) It has been written in such a way that under most circumstances you 
+% 2) It has been written in such a way that under most circumstances you
 % should not need to edit it.
 %
 % Class license:
@@ -106,7 +106,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=1.5cm, footskip=.5cm}
+\geometry{left=1.0cm, top=0.5cm, right=1.0cm, bottom=0.5cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -223,46 +223,46 @@
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{8.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{7.8pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
-\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{8.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{darktext} #1}}
+\newcommand*{\footerstyle}[1]{{\fontsize{9pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\paragraphstyle}{\fontsize{10.3pt}{1em}\bodyfont\upshape}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\scshape #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\slshape #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\slshape\color{awesome} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of subentry
-\newcommand*{\subentrytitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
-\newcommand*{\subentrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\subentrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\subentrylocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\subdescriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\subentrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\mdseries\color{darktext} #1}}
+\newcommand*{\subentrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{darktext} #1}}
+\newcommand*{\subentrydatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{darktext} #1}}
+\newcommand*{\subentrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{awesome} #1}}
+\newcommand*{\subdescriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of honor
-\newcommand*{\honortitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\honortitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont #1}}
+\newcommand*{\honorpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries #1}}
+\newcommand*{\honordatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{darktext} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{awesome} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{text} #1}}
 
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
-\newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape #1}}
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
-\newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} \underline{#1}}}
+\newcommand*{\letterdatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{graytext} #1}}
+\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfont\upshape\color{graytext}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
+\newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{lighttext} #1}}
 
 
 %-------------------------------------------------------------------------------
@@ -416,7 +416,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{istart}{false}
             }
             {\@headersocialsep}
           \href{mailto:\@email}{\faEnvelope\ \@email}
@@ -426,7 +426,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{istart}{false}
             }
             {\@headersocialsep}
           \href{https://\@homepage}{\faHome\ https://\@homepage}
@@ -436,7 +436,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{istart}{false}
             }
             {\@headersocialsep}
           \href{https://github.com/\@github}{\faGithubSquare\ https://github.com/\@github}
@@ -446,7 +446,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{istart}{false}
             }
             {\@headersocialsep}
           \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\ \@stackoverflowname}
@@ -456,7 +456,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{istart}{false}
             }
             {\@headersocialsep}
           \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\ \@linkedin}
@@ -466,7 +466,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{istart}{false}
             }
             {\@headersocialsep}
           \href{https://twitter.com/\@twitter}{\faTwitter\ \@twitter}
@@ -476,7 +476,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{istart}{false}
             }
             {\@headersocialsep}
           \faSkype\ \@skype
@@ -500,7 +500,7 @@
   }
   \fancyfoot[R]{
     \footerstyle{#3}
-  } 
+  }
 }
 
 % Define a section for CV
@@ -563,7 +563,7 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
     \setlength\leftskip{0.2cm}
     \subentrytitlestyle{#2} & \ifthenelse{\equal{#1}{}}
-      {\subentrydatestyle{#3}}{} 
+      {\subentrydatestyle{#3}}{}
     \ifthenelse{\equal{#1}{}}
       {}
       {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
@@ -603,7 +603,7 @@
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{
-	\skilltypestyle{#1} & \skillsetstyle{#2} 
+	\skilltypestyle{#1} & \skillsetstyle{#2}
   \\
 }
 
@@ -655,7 +655,7 @@
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
     {\lettertitlestyle{\@lettertitle} \\}
-  \lettertextstyle{\@letteropening} 
+  \lettertextstyle{\@letteropening}
 }
 
 % Define a closing of the cover letter
