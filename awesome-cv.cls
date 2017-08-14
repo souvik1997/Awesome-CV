@@ -542,15 +542,14 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
-  \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+    \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+    \multicolumn{2}{L{\textwidth}}{\vspace{1mm}\descriptionstyle{#5}}
   \end{tabular*}%
 }
 
@@ -581,7 +580,6 @@
 % Define an environment for cvhonor
 \newenvironment{cvhonors}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-2mm}
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
@@ -599,10 +597,9 @@
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-2.0mm}
   \begin{center}
     \setlength\tabcolsep{1ex}
-    \setlength{\extrarowheight}{0pt}
+    \setlength{\extrarowheight}{1mm}
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.8}}}
 }{%
     \end{tabular*}
@@ -611,7 +608,7 @@
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{%
-	\skilltypestyle{#1} & \skillsetstyle{#2} \\
+  \skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
 
 % Define an environment for cvitems(for cventry)
